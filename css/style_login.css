@@ -1,0 +1,164 @@
+:root {
+    --font_headers: 'Itim', cursive;
+    --font_parag: 'Montserrat Alternates', sans-serif;
+    --font_attached: 'Dancing Script', cursive;
+    /* colors */
+    --color_blue_sky: #DAE7EC;
+    --color_blue: #006060;
+    --color_lightBlue: #a0c4ff;
+    --color_dark: #050505;
+    --color_darkGrey: #40403E;
+    --color_lightGrey: #9C9C9C;
+    --color_lightWhite: #EBEBEB;
+    --color_red: #e63946;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/Seven\ Mile\ Bridge\,\ Key\ West\,\ United\ States.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    font-family: var(--font_para);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: var(--font_headers);
+
+}
+/* title, website logo */
+.title_header{
+    color:var(--color_lightWhite);
+    margin: 15%;
+    font-size: 5em;
+}
+.title{
+    font-family: var(--font_headers);
+    font-size: 1.2em;
+}
+.title .title_cap{
+color: var(--color_lightBlue);
+}
+
+.container {
+    background-color: var(--color_darkGrey);
+    width: 70%;
+    height: 70vh;
+    position: relative;
+}
+
+.form_container {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form h2 {
+    color: var(--color_lightBlue);
+    font-family: var(--font_header);
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    margin-bottom: 50px;
+}
+
+form input {
+    border-radius: 20px;
+    border: 2px solid var(--color_lightBlue);
+    font-size: 1.1em;
+    color: var(--color_darkGrey);
+    padding: 12px 15px;
+}
+
+form input:focus {
+    transform: scale(1.1);
+}
+
+.btn_submit {
+    background-color: var(--color_lightBlue);
+    color: var(--color_lightWhite);
+    letter-spacing: 1.1px;
+    font-family: var(--font_header);
+}
+
+.btn_submit:hover {
+    cursor: pointer;
+}
+
+.welcome {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/The\ Met\,\ New\ York\,\ United\ States.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--color_darkGrey);
+    padding-left: 5px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--color_lightWhite);
+}
+
+.welcome h2 {
+    color: var(--color_lightWhite);
+    font-family: var(--font_attached);
+    font-size: 2em;
+    margin-top: 20%;
+}
+
+.welcome .logo_name {
+    font-family: var(--font_header);
+    color: var(--color_lightBlue);
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 3em;
+}
+
+.new_to_travel{
+    margin-top: 20px;
+    font-size: .6em;
+    font-family:var(--font_header);
+    letter-spacing: 1px;
+    color: var(--color_darkGrey);
+}
+
+
+
+
+@media only screen and (max-width: 700px){
+  
+    .form_container{
+        width: 100%;
+    }
+   .welcome_pa::after{
+    content: "Welcome to our webiste!";
+    color: var(--color_darkGrey);
+   }
+   .welcome_pa{
+    color: var(--color_darkGrey);
+    font-family: var(--font_header);
+    margin: 7px;
+   }
+    .welcome {
+        visibility: hidden;
+    }
+    form h2{
+        margin-bottom: 30px;
+    }
+    
+}
